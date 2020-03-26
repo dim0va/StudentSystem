@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Student System</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-6 col-md-3 form-container">
+                <form id="myForm">
+
+                    <h2> Add student: </h2>
+                    <div class="form-group">
+                        <label for="user_name">Name*</label>
+                        <input type="text" class="form-control" id="user_name" placeholder="Enter name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user_email">Email*</label>
+                        <input type="text" class="form-control " id="user_email" placeholder="Enter email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user_age">Age*</label>
+                        <input type="text" class="form-control number" id="user_age" placeholder="Enter age">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user_phone">Phone number*</label>
+                        <input type="text" class="form-control number" id="user_phone" placeholder="Enter phone number">
+                    </div>
+
+                    <div class="radio-buttons">
+                        <p class="label">
+                            Prefered way of comunication*
+                        </p>
+
+                        <div class="custom-control custom-radio">
+                            <input type="radio" name="radioBtn" value="Email" id="email-radio-btn" />
+                            <label class=" label" for="radio">Email</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" name="radioBtn" value="Phone" id="phone-radio-btn" />
+                            <label class=" label" for="radio">Phone</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="level" class="label">English level*</label>
+                        <select class="form-control" id="level">
+                        <option>---</option>
+                        <option>A1</option>
+                        <option>A2</option>
+                        <option>B1</option>
+                        <option>B2</option>
+                        <option>C1</option>
+                        <option>C2</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="label">Available to start*</label>
+                        <input type="date" name="date" id="start_date" min="2019-01-01" max="2030-12-31" class="form-control">
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user_skills">Technical skills and courses</label>
+                        <input type="text" class="form-control" id="user_skills" placeholder="Enter skills and courses">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user_presentation">Short personal presentation</label>
+                        <input type="text" class="form-control" id="user_presentation" placeholder="e.g. reasons for joining">
+                    </div>
+
+                    <div class="checkbox form-group">
+                        <label class="label">
+                            <input class="checkbox_value" type="checkbox"  value="Yes" id="checkbox" unchecked> 
+                            Study from home
+                        </label>
+                    </div>
+
+                    <input type="submit" class="btn btn-block btn-primary" value="Add student">
+
+                    <p id="error"> All fields marked with * must be filled! </p>
+
+                </form>
+            </div>
+
+            <div class="col-xs-12 col-md-9 content-container">
+                <div class="row" id="parent_avatars">
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+
+<script src="main.js"></script>
+
+</html>

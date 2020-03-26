@@ -1,0 +1,6 @@
+1. Open index.html file
+2. On the left side there is a pink form.
+3. You fill in the student's data
+4. Click on Add Student button
+5. On your left is shown a note with all the student's information.
+6. On the top right corner of each note, there is a X-button, to delete it
